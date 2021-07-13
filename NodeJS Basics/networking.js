@@ -1,5 +1,5 @@
 const http = require("http"); // UNCOMMON TO USE, TOO COMPLEX, USE EXPRESS FOR NODEJS
-const { runInNewContext } = require("vm");
+//const { runInNewContext } = require("vm");
 const server = http.createServer((req, res) => { // create server with request and resonse arguments
     if (req.url === "/"){ //work with actual request or response to object instead of sockets
         res.write("Hello World!");
